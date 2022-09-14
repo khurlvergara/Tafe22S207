@@ -1,0 +1,53 @@
+﻿<Page
+    x:Class="Calculator.CurrencyConversion"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Calculator"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+	<Grid Background="LightGray" >
+		<StackPanel Orientation="Vertical">
+
+			<StackPanel Orientation="Vertical">
+
+				<TextBox x:Name="titleTextBox" HorizontalAlignment="Left" Height="113" Text="CURRENCY CONVERSION CALCULATOR" VerticalAlignment="Top" Width="965" FontSize="65" Margin="192,20,0,0" FontFamily="impact" BorderBrush="DarkBlue" Background="AliceBlue"></TextBox>
+
+				<StackPanel Orientation="Horizontal">
+					<TextBlock x:Name="amountTextBlock" HorizontalAlignment="Left" Height="70" Text="Amount $" VerticalAlignment="Top" Width="330" FontSize="40"  FontFamily="impact" Margin="10"/>
+					<TextBlock x:Name="fromTextBlock" HorizontalAlignment="Left" Height="70" Text="From" VerticalAlignment="Top" Width="330" FontSize="40"  FontFamily="impact" Margin="10"/>
+					<TextBlock x:Name="toTextBlock" HorizontalAlignment="Left" Height="70" Text="To" VerticalAlignment="Top" Width="330" FontSize="40"  FontFamily="impact" Margin="10"/>
+				</StackPanel>
+
+				<StackPanel Orientation="Horizontal">
+					<TextBox  x:Name="amountTextBox" HorizontalAlignment="Left" PlaceholderText="Input" VerticalAlignment="Top" Height="70" Width="330" FontSize="30" Margin="10"/>
+
+					<ComboBox x:Name="fromComboBox" Height="70"  Width="330" Margin="10">
+						<ComboBoxItem x:Name="oneComboBoxItem" Content="US Dollar"></ComboBoxItem>
+						<ComboBoxItem x:Name="twoComboBoxItem" Content="Euro"></ComboBoxItem>
+						<ComboBoxItem x:Name="threeComboBoxItem" Content="British"></ComboBoxItem>
+						<ComboBoxItem x:Name="fourComboBoxItem" Content="Indian Rupee"></ComboBoxItem>
+					</ComboBox>
+
+					<ComboBox x:Name="toComboBox"  Height="70"  Width="330" Margin="10">
+						<ComboBoxItem x:Name="tooneComboBoxItem" Content="US Dollar"></ComboBoxItem>
+						<ComboBoxItem x:Name="totwoComboBoxItem" Content="Euro"></ComboBoxItem>
+						<ComboBoxItem x:Name="tothreeComboBoxItem" Content="British"></ComboBoxItem>
+						<ComboBoxItem x:Name="tofourComboBoxItem" Content="Indian Rupee"></ComboBoxItem>
+					</ComboBox>
+				</StackPanel>
+			</StackPanel>
+			<TextBlock x:Name="howmuchTextBlock" HorizontalAlignment="Left" Height="45"  Margin="10" Text="Amount" VerticalAlignment="Top" Width="350" FontSize="20" />
+			<TextBlock x:Name="answerTextBlock" HorizontalAlignment="Left" Height="60" Margin="10" Text="Result" VerticalAlignment="Top" Width="436" FontSize="30"/>
+			<TextBlock x:Name="currencyamountTextBlock" HorizontalAlignment="Left" Height="45" Margin="10" Text="" VerticalAlignment="Top" Width="350" FontSize="20"/>
+			<TextBlock x:Name="currencyresiprocateTextBlock" HorizontalAlignment="Left" Height="45" Margin="10" Text="" VerticalAlignment="Top" Width="350" FontSize="20"/>
+
+			<Button x:Name="currencyButton" Content="Currency Conversion" Height="68" VerticalAlignment="Center" Width="280" Background="AliceBlue" FontFamily="impact" FontSize="30" BorderBrush="DarkBlue" Margin="490,0,0,0" Click="currencyButton_Click"/>
+			<Button x:Name="currencyButton_Copy" Content="Exit" Height="63" VerticalAlignment="Top" Width="260" Background="AliceBlue"  FontFamily="impact" FontSize="30" BorderBrush="DarkBlue" Margin="500,10,0,0" Click="exitcurrency_Click"/>
+
+		</StackPanel>
+
+	</Grid>
+</Page>
