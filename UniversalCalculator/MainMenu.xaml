@@ -36,10 +36,10 @@
             <Image x:Name="abacus" Source="Images/abacus.PNG" Height="75" Width="99" RenderTransformOrigin="0.529,0.5" HorizontalAlignment="Right"/>
 
             <TextBlock x:Name="universalCalculatorTextBlock" Text="Universal Calculator" FontSize="24" FontWeight="Bold" Foreground="Blue" HorizontalAlignment="Center" Margin="10,10,10,10"/>
-            <Button x:Name="mathsButton" Content="Maths Calculator" Width="150" Margin="75,10,10,10"/>
-            <Button x:Name="mortgageButton" Content="Mortagage Calculator" Width="150" Margin="75,10,10,10" FontSize="13"/>
-            <Button x:Name="currencyConverterButton" Content="Currency Converter" Width="150" Margin="75,10,10,10"/>
-            <Button x:Name="exitButton" Content="Exit" Width="150" Margin="75,10,10,10"/>
+            <Button x:Name="mathsButton" Content="Maths Calculator" Width="150" Margin="75,10,10,10" Click="mathsButton_Click"/>
+            <Button x:Name="mortgageButton" Content="Mortagage Calculator" Width="150" Margin="75,10,10,10" FontSize="13" Click="mortgageButton_Click"/>
+            <Button x:Name="currencyConverterButton" Content="Currency Converter" Width="150" Margin="75,10,10,10" Click="currencyConverterButton_Click"/>
+            <Button x:Name="exitButton" Content="Exit" Width="150" Margin="75,10,10,10" Click="exitButton_Click"/>
 
         </StackPanel>
     </Grid>

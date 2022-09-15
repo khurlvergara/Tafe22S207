@@ -144,7 +144,7 @@ namespace Calculator
 
 		private void exitButton_Click(object sender, RoutedEventArgs e)
 		{
-			this.Frame.Navigate(typeof(MainPage));
+			this.Frame.Navigate(typeof(MainMenu));
 		}
 	}
 }
